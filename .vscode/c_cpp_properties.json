@@ -1,0 +1,50 @@
+{
+    "configurations": [
+        {
+            "name": "STM32 Debug",
+            "includePath": [
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/arm-none-eabi/include/c++/8.2.1",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/arm-none-eabi/include/c++/8.2.1/arm-none-eabi",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/arm-none-eabi/include/c++/8.2.1/backward",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/lib/gcc/arm-none-eabi/8.2.1/include",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/arm-none-eabi/include",
+                "${workspaceRoot}/Drivers/CMSIS/Include/",
+                "${workspaceRoot}/Drivers/CMSIS/Include/",
+                "${workspaceRoot}/Drivers/CMSIS/Device/ST/STM32F1xx/Include/",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Core/Src",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc",
+                "${workspaceRoot}/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src",
+                "${workspaceRoot}/Inc",
+                "${workspaceRoot}/Src",
+                "${workspaceRoot}/Drivers/STM32F1xx_HAL_Driver/Inc",
+                "${workspaceRoot}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/",
+                "${workspaceRoot}/Drivers/STM32F1xx_HAL_Driver/Src"
+            ],
+            "defines": [
+                "DEBUG",
+                "DEFAULT_STACK_SIZE=2048",
+                "HSE_VALUE=8000000",
+                "OS_INCLUDE_STARTUP_INIT_MULTIPLE_RAM_SECTIONS",
+                "PB_MSGID",
+                "STM32F103",
+                "STM32F103x8",
+                "USE_DEVICE_MODE",
+                "USE_FULL_ASSERT",
+                "USE_HAL_DRIVER",
+                "USE_USB_OTG_FS"
+            ],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+            "path": [
+                "${workspaceRoot}",
+                "F:/GNU MCU Eclipse/ARM Embedded GCC/8.2.1-1.7-20190524-0603/"
+            ],
+            "limitSymbolsToIncludedHeaders": false,
+            "databaseFilename": ""
+            }
+            }
+            ],
+            "version": 4
+}

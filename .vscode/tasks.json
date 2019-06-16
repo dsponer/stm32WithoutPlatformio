@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Make Firmware",
+            "type": "shell",
+            "command": "make -j4 all CPPFLAGS=\"-DSTM32F103x8\"",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }, 
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "openocd",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+
+    ]
+}
